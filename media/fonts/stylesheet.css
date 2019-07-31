@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-Bold.eot');
+    src: url('Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('Montserrat/Montserrat-Bold.woff') format('woff'),
+        url('Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-Medium.eot');
+    src: url('Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('Montserrat/Montserrat-Medium.woff') format('woff'),
+        url('Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.eot');
+    src: url('Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('Poppins/Poppins-Regular.woff') format('woff'),
+        url('Poppins/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-ExtraBold.eot');
+    src: url('Raleway/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('Raleway/Raleway-ExtraBold.woff') format('woff'),
+        url('Raleway/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-SemiBold.eot');
+    src: url('Poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('Poppins/Poppins-SemiBold.woff') format('woff'),
+        url('Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-SemiBold.eot');
+    src: url('Raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('Raleway/Raleway-SemiBold.woff') format('woff'),
+        url('Raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-Regular.eot');
+    src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Raleway/Raleway-Regular.woff2') format('woff2'),
+        url('Raleway/Raleway-Regular.woff') format('woff'),
+        url('Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-SemiBold.eot');
+    src: url('Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat/Montserrat-SemiBold.woff') format('woff'),
+        url('Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-Regular.eot');
+    src: url('Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Medium.eot');
+    src: url('Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Poppins/Poppins-Medium.woff2') format('woff2'),
+        url('Poppins/Poppins-Medium.woff') format('woff'),
+        url('Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('Open_Sans/OpenSans-Regular.eot');
+    src: url('Open_Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+        url('Open_Sans/OpenSans-Regular.woff') format('woff'),
+        url('Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('Open_Sans/OpenSans-Bold.eot');
+    src: url('Open_Sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Open_Sans/OpenSans-Bold.woff2') format('woff2'),
+        url('Open_Sans/OpenSans-Bold.woff') format('woff'),
+        url('Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

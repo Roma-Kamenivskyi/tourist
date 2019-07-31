@@ -1,0 +1,521 @@
+body {
+  font-family: "Montserrat";
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container {
+  width: 80%;
+  max-width: 1255px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  /* Text style for "Our Agency" */
+  color: #ef5b5b;
+  font-family: "Segoe Script";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.section-title-bottom, .convenience-item h4 {
+  display: block;
+  color: #222222;
+  font-family: "Montserrat";
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  margin-top: 10px;
+}
+
+.section-text {
+  color: grey;
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.section-btn {
+  font-family: "Montserrat";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 17rem;
+  height: 5rem;
+  background-color: #ef5b5b;
+  border-radius: 6px;
+}
+
+.section-btn:hover {
+  background-color: #de7777;
+}
+
+.main-header {
+  background-color: #a3cbe4;
+  background-image: url("../images/header-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Montserrat";
+  padding: 6rem 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: "Open Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.logo-text_top {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+}
+
+.logo-text_bottom {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.navigation_inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-list {
+  font-family: "Montserrat";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-item {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 4.5rem;
+}
+
+.navigation-link {
+  color: #222222;
+  text-decoration: none;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #ef5b5b;
+  min-width: 150px;
+}
+
+.dropdown-menu a {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ebe0cc;
+  color: #ef5b5b;
+}
+
+.book-now-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 3.5rem;
+  background-color: #ef5b5b;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.header-content {
+  padding: 18rem 0;
+}
+
+.header-title {
+  font-family: "Segoe Script";
+  font-size: 2.8rem;
+  color: #ef5b5b;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-bottom: 29px;
+}
+
+.header_offer-text {
+  color: #222222;
+  font-size: 4.1rem;
+  font-weight: 600;
+  line-height: 4.1rem;
+  margin-bottom: 29px;
+}
+
+.offer-text-bottom {
+  margin-top: 24px;
+  display: block;
+  font-size: 2.8rem;
+  line-height: 2.6rem;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.mobile-navigation {
+  display: none;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.mobile-link {
+  display: block;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.feature-trip {
+  padding: 7rem 0 14.5rem 0;
+  background-color: #ffffff;
+}
+
+.feature-trip .section-title {
+  margin-bottom: 3rem;
+}
+
+.feature-trip .section-text {
+  margin-bottom: 3.5rem;
+}
+
+.feature-trip .section-title-bottom, .feature-trip .convenience-item h4, .convenience-item .feature-trip h4 {
+  position: relative;
+}
+
+.feature-trip .section-title-bottom::before, .feature-trip .convenience-item h4::before, .convenience-item .feature-trip h4::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  margin-left: -10px;
+  width: 2px;
+  height: 2rem;
+  background-color: #ef5b5b;
+}
+
+.feature-trip-container {
+  width: 87%;
+  margin-left: auto;
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trip-description {
+  width: 24%;
+  padding: 0 15px;
+}
+
+.trip-cards {
+  width: 78%;
+}
+
+.trip-cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -18.4rem;
+}
+
+.card-item {
+  /* Style for "Image Holder" */
+  background-color: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0.5px 2px 0px rgba(33, 30, 31, 0.2);
+          box-shadow: 0.5px 2px 0px rgba(33, 30, 31, 0.2);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.card-item figcaption {
+  /* Text style for "London, Englan" */
+  color: #222222;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  margin: 15px 0;
+}
+
+.card-item img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-bottom {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 2px solid #d6d6d6;
+}
+
+.card-bottom a {
+  background-color: #ef5b5b;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.card-bottom a:hover {
+  background-color: #de7777;
+}
+
+.rating {
+  font-size: 1.4rem;
+  color: #222222;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.stars {
+  color: #ef5b5b;
+  font-size: 1.6rem;
+  margin-left: 5px;
+}
+
+.convenience-section {
+  padding: 13.5rem 0;
+  background-color: #f0efef;
+  text-align: center;
+}
+
+.convenience-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 6.5rem;
+}
+
+.convenience-item {
+  width: 30%;
+  padding: 3.5rem 1.5rem 5.5rem 1.5rem;
+  background-color: #fff;
+  min-height: 260px;
+}
+
+.convenience-item h4 {
+  margin: 2rem 0;
+}
+
+.slick-slide img {
+  margin: 0 auto;
+  display: block;
+}
+
+.why-choose-us {
+  margin-top: 13.5rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 900px) {
+  .navigation-list {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .main-header {
+    padding: 3rem 0;
+  }
+  .header-content {
+    padding: 10rem 0;
+  }
+  .feature-trip-container {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 93%;
+  }
+  .feature-trip {
+    padding-bottom: 5.5rem;
+  }
+  .trip-cards {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: -12.4rem;
+  }
+  .trip-description {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 5rem;
+  }
+  .card-bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-bottom a {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header_offer-text {
+    font-size: 3.1rem;
+  }
+  .offer-text-bottom {
+    font-size: 1.8rem;
+  }
+  .trip-description {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .trip-cards {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    padding: 5rem 0;
+  }
+  .card-bottom a {
+    padding: 10px 15px;
+    font-size: 2rem;
+  }
+  .card-item:not(:first-child) {
+    margin-top: 4.5rem;
+  }
+  .rating,
+  .stars {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) and (max-width: 400px) {
+  .section-btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
