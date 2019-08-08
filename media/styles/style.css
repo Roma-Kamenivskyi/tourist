@@ -516,7 +516,7 @@ a {
 .top-tour-packege {
   position: relative;
   padding: 14.5rem 0;
-  background: url("../images/top-tour-packege-bg.jpg") center top no-repeat/cover;
+  background: top center / cover no-repeat url("../images/top-tour-packege-bg.jpg");
   text-align: center;
   z-index: 1;
   overflow: hidden;
@@ -1007,7 +1007,7 @@ a {
 
 .our-apps-inner {
   padding: 19.6rem 0 17.8rem 0;
-  background: url(../images/mobile-app-img.png) left no-repeat/contain;
+  background: left /contain no-repeat url(../images/mobile-app-img.png);
 }
 
 .app-description {
@@ -1048,7 +1048,7 @@ a {
 .partners-section {
   position: relative;
   padding-top: 19.8rem;
-  background: url(../images/top-tour-packege-bg.jpg) center no-repeat/cover;
+  background: center / cover no-repeat url(../images/top-tour-packege-bg.jpg);
   z-index: 1;
   text-align: center;
 }
