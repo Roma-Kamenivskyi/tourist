@@ -6,6 +6,8 @@ $(function() {
     autoplaySpeed: 2000,
     accessibility: true,
     infinite: true,
+    dots: false,
+    
     responsive: [
       {
         breakpoint: 1366,
@@ -31,7 +33,7 @@ $(function() {
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 570,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -39,7 +41,77 @@ $(function() {
       }
     ]
   });
+  
+  $('.slick-cards').slick({
+    centerMode: true,
+    slidesToShow: 4,
+    infinite: true,
 
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
+        }
+      }
+    ]
+  });
+  $('.partners-slick').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+  // Navbar dropdown
   $(".dropdown-toggle").on("click", function() {
     $(".dropdown-menu")
       .not($(this).next())
@@ -48,20 +120,15 @@ $(function() {
       .next()
       .slideToggle();
   });
+
+  // Mobile burger menu
+  let mobileWrap = $('.mobile-nav-wrapper');
   $(".burger-menu").on("click", function() {
-    $(".mobile-navigation").slideToggle();
+    mobileWrap.slideDown();
   });
 
-  //   let $burgers = $(".c-hamburger");
-  //   $burgers.each(function(item) {
+  $('.close-mobile-nav').on('click', function() {
+    mobileWrap.slideUp();
+  });
 
-  //   });
-  //   on("click", function(e) {
-  //     e.preventDefault();
-  //     $(this).toggleClass("is-active");
-  //   });
-  // $('#menuToggle').on('click', function(){
-  //     $(this).toggleClass('menu-toggle--active');
-  //     return false;
-  // });
 });
