@@ -1502,6 +1502,8 @@ a {
   }
   .convenience-section {
     padding: 5.5rem 0;
+    .container {
+      width: 85%;
   }
   .convenience-item {
     min-height: 283px;
