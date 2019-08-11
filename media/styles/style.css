@@ -1512,6 +1512,9 @@ a {
   .why-choose-us {
     margin-top: 6.5rem;
   }
+  .why-choose-us .container{
+    width: 100%;
+  }
   .tour-package-cards .slick-prev,
   .tour-package-cards .slick-next {
     background-color: #ef5b5b;
