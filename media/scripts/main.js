@@ -125,12 +125,12 @@ $(function() {
   let mobileWrap = $('.mobile-nav-wrapper');
   $(".burger-menu").on("click", function() {
     mobileWrap.slideDown();
-    $(document.html).css('overflow', 'hidden');
+    $("html, body").css('overflow', 'hidden');
   });
 
   $('.close-mobile-nav').on('click', function() {
     mobileWrap.slideUp();
-    $(document.html).css('overflow', 'visible');
+    $("html, body").css('overflow', 'visible');
   });
 
 });
