@@ -7,7 +7,11 @@ $(function() {
     accessibility: true,
     infinite: true,
     dots: false,
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
     responsive: [
       {
         breakpoint: 1366,
@@ -41,23 +45,39 @@ $(function() {
       }
     ]
   });
+  
+  $('.slick-cards').slick({
+    centerMode: true,
+    slidesToShow: 4,
+    infinite: true,
 
+<<<<<<< HEAD
   $(".slick-cards").slick({
     centerMode: true,
     slidesToShow: 4,
     infinite: true,
 
+=======
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
     responsive: [
       {
         breakpoint: 1100,
         settings: {
+<<<<<<< HEAD
           slidesToShow: 3
+=======
+          slidesToShow: 3,
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
         }
       },
       {
         breakpoint: 800,
         settings: {
+<<<<<<< HEAD
           slidesToShow: 2
+=======
+          slidesToShow: 2,
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
         }
       },
       {
@@ -76,7 +96,11 @@ $(function() {
       }
     ]
   });
+<<<<<<< HEAD
   $(".partners-slick").slick({
+=======
+  $('.partners-slick').slick({
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
@@ -85,7 +109,11 @@ $(function() {
       {
         breakpoint: 800,
         settings: {
+<<<<<<< HEAD
           slidesToShow: 4
+=======
+          slidesToShow: 4,
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
         }
       },
       {
@@ -105,13 +133,21 @@ $(function() {
       {
         breakpoint: 350,
         settings: {
+<<<<<<< HEAD
           slidesToShow: 1
+=======
+          slidesToShow: 1,
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
         }
       }
     ]
   });
 
+<<<<<<< HEAD
   // Navbar accordion dropdown
+=======
+  // Navbar dropdown
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
   $(".dropdown-toggle").on("click", function() {
     $(".dropdown-menu")
       .not($(this).next())
@@ -122,6 +158,7 @@ $(function() {
   });
 
   // Mobile burger menu
+<<<<<<< HEAD
   const mobileWrap = $(".mobile-nav-wrapper");
   $(".burger-menu").on("click", function() {
     mobileWrap.css({
@@ -137,4 +174,17 @@ $(function() {
       right: "auto"
     });
   });
+=======
+  let mobileWrap = $('.mobile-nav-wrapper');
+  $(".burger-menu").on("click", function() {
+    mobileWrap.slideDown();
+    $("html, body").css('overflow', 'hidden');
+  });
+
+  $('.close-mobile-nav').on('click', function() {
+    mobileWrap.slideUp();
+    $("html, body").css('overflow', 'visible');
+  });
+
+>>>>>>> 1f1ab21db7fba07d0ec33ac28dd5b888185c38a8
 });
