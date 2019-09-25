@@ -74,7 +74,7 @@ a {
   border-radius: 6px;
 }
 
-.section-btn:hover {
+.section-btn:hover, .book-now-btn:hover {
   background-color: #de7777;
 }
 
@@ -200,6 +200,25 @@ a {
   color: #ef5b5b;
 }
 
+.dropdown-mobile-menu {
+  display: none;
+  background-color: #ef5b5b;
+  text-align: center;
+}
+
+.dropdown-mobile-menu a {
+  font-size: 2.5rem;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  color: black;
+}
+
+.dropdown-mobile-menu a:hover {
+  background-color: black;
+  color: #ffff;
+}
+
 .book-now-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,22 +274,48 @@ a {
 }
 
 .mobile-nav-wrapper {
-  display: none;
   position: fixed;
-  left: 0;
+  left: -1000px;
   top: 0;
   bottom: 0;
+  z-index: 100;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.openDone {
+  left: 0;
   right: 0;
-  overflow: auto;
 }
 
 .mobile-navigation {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ef5b5b;
   color: #000;
   width: 100%;
   height: 100%;
   padding-top: 2rem;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.mobile-item {
+  width: 100%;
+}
+
+.mobile-item:hover {
+  background-color: #f26b70;
 }
 
 .close-mobile-nav {
@@ -285,6 +330,7 @@ a {
 }
 
 .mobile-link {
+  text-align: center;
   display: block;
   font-size: 3rem;
   color: #ffffff;
@@ -442,28 +488,52 @@ a {
 }
 
 .convenience-list .slick-arrow {
-  width: 28px;
-  height: 28px;
-  border: 1px solid #ef5b5b;
-  background-color: #ef5b5b;
-  border-radius: 50%;
-  font-size: 0;
-}
-
-.convenience-list .slick-prev:before {
-  content: '<';
-}
-
-.convenience-list .slick-next:before {
-  content: '>';
+  z-index: 10;
 }
 
 .convenience-list .slick-prev {
   left: -39px;
+  top: 44%;
+  width: 4rem;
+  height: 4rem;
+  background: url(../images/triangle-prev.svg);
+  background-repeat: no-repeat;
+  background-position: 38% 50%;
+  background-size: 45%;
+  background-color: transparent;
+  border: 1.5px solid #ef5b5b;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.convenience-list .slick-prev::before {
+  content: "";
 }
 
 .convenience-list .slick-next {
   right: -39px;
+  top: 44%;
+  width: 4rem;
+  height: 4rem;
+  background: url(../images/triangle-next.svg);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: 55% 50%;
+  background-color: transparent;
+  border: 1.5px solid #ef5b5b;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.convenience-list .slick-next:before {
+  content: "";
+}
+
+.convenience-list .slick-prev,
+.convenience-list .slick-next {
+  background-color: #ef5b5b;
 }
 
 .convenience-item {
@@ -523,7 +593,7 @@ a {
 }
 
 .top-tour-packege::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -567,7 +637,7 @@ a {
 }
 
 .tour-package-cards .slick-prev::before {
-  content: '';
+  content: "";
 }
 
 .tour-package-cards .slick-next {
@@ -591,7 +661,7 @@ a {
 }
 
 .tour-package-cards .slick-next::before {
-  content: '';
+  content: "";
 }
 
 .tour-package-cards li {
@@ -665,7 +735,7 @@ a {
 }
 
 .days::before {
-  content: '*';
+  content: "*";
   color: #ef5b5b;
   font-size: 1.8rem;
 }
@@ -744,7 +814,7 @@ a {
 .book-check-in a::after,
 .book-check-out a::after,
 .book-people a::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 0;
   height: 0;
@@ -780,7 +850,7 @@ a {
 }
 
 .best-tourist-places::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -867,7 +937,7 @@ a {
 }
 
 .country::before {
-  content: '°';
+  content: "°";
   position: relative;
   top: 10px;
   color: #00b1ff;
@@ -1054,7 +1124,7 @@ a {
 }
 
 .partners-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1106,7 +1176,8 @@ a {
   width: 45.4%;
 }
 
-.subscribe-email, .email-submit {
+.subscribe-email,
+.email-submit {
   border: none;
 }
 
@@ -1163,7 +1234,8 @@ a {
   width: 47%;
 }
 
-.form-column input, .form-column .form-textarea {
+.form-column input,
+.form-column .form-textarea {
   color: #808080;
   font-family: "Poppins";
   font-size: 1.8rem;
@@ -1178,7 +1250,8 @@ a {
   text-transform: capitalize;
 }
 
-.form-column input:focus, .form-column .form-textarea:focus {
+.form-column input:focus,
+.form-column .form-textarea:focus {
   outline: 1px solid #ef5b5b;
 }
 
@@ -1243,7 +1316,8 @@ a {
   line-height: 1.6rem;
 }
 
-.phone i, .address i {
+.phone i,
+.address i {
   margin-right: 1.5rem;
 }
 
@@ -1251,6 +1325,11 @@ a {
   display: block;
   margin-bottom: 2rem;
   color: #222222;
+  border-bottom: 1px solid transparent;
+}
+
+.phone:focus {
+  border-bottom: 1px solid #ef5b5b;
 }
 
 .address {
@@ -1270,7 +1349,8 @@ a {
   margin-bottom: 3.7rem;
 }
 
-.footer-social-links li a, .footer-links li a {
+.footer-social-links li a,
+.footer-links li a {
   color: #222222;
   font-family: "Poppins";
   font-size: 1.6rem;
@@ -1279,7 +1359,8 @@ a {
   text-transform: uppercase;
 }
 
-.footer-social-links li, .footer-links li {
+.footer-social-links li,
+.footer-links li {
   margin-bottom: 2rem;
 }
 
@@ -1369,6 +1450,12 @@ a {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .mobile-nav-wrapper {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .mainland-image-wrap {
     width: 150px;
@@ -1421,7 +1508,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
   .main-header {
     padding: 3rem 0;
@@ -1474,7 +1561,8 @@ a {
   .why-choose-us {
     margin-top: 6.5rem;
   }
-  .tour-package-cards .slick-prev, .tour-package-cards .slick-next {
+  .tour-package-cards .slick-prev,
+  .tour-package-cards .slick-next {
     background-color: #ef5b5b;
   }
   .top-tour-packege {
@@ -1531,7 +1619,8 @@ a {
   .subscribe-block {
     padding: 7rem 0;
   }
-  .subscribe-inner-content, .email-form {
+  .subscribe-inner-content,
+  .email-form {
     width: 100%;
   }
   .subscribe-inner-content {
@@ -1632,6 +1721,9 @@ a {
 @media only screen and (max-width: 600px) {
   .convenience-section .container {
     width: 84%;
+  }
+  .why-choose-us .container {
+    width: 100%;
   }
 }
 

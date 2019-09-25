@@ -7,7 +7,7 @@ $(function() {
     accessibility: true,
     infinite: true,
     dots: false,
-    
+
     responsive: [
       {
         breakpoint: 1366,
@@ -41,8 +41,8 @@ $(function() {
       }
     ]
   });
-  
-  $('.slick-cards').slick({
+
+  $(".slick-cards").slick({
     centerMode: true,
     slidesToShow: 4,
     infinite: true,
@@ -51,13 +51,13 @@ $(function() {
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 3
         }
       },
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2
         }
       },
       {
@@ -76,7 +76,7 @@ $(function() {
       }
     ]
   });
-  $('.partners-slick').slick({
+  $(".partners-slick").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
@@ -85,7 +85,7 @@ $(function() {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 4
         }
       },
       {
@@ -105,13 +105,13 @@ $(function() {
       {
         breakpoint: 350,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1
         }
       }
     ]
   });
 
-  // Navbar dropdown
+  // Navbar accordion dropdown
   $(".dropdown-toggle").on("click", function() {
     $(".dropdown-menu")
       .not($(this).next())
@@ -122,13 +122,19 @@ $(function() {
   });
 
   // Mobile burger menu
-  let mobileWrap = $('.mobile-nav-wrapper');
+  const mobileWrap = $(".mobile-nav-wrapper");
   $(".burger-menu").on("click", function() {
-    mobileWrap.slideDown();
+    mobileWrap.css({
+      left: "0",
+      right: "0"
+    });
   });
 
-  $('.close-mobile-nav').on('click', function() {
-    mobileWrap.slideUp();
+  // CLOSE BTN
+  $(".close-mobile-nav").on("click", function() {
+    mobileWrap.css({
+      left: "-1000px",
+      right: "auto"
+    });
   });
-
 });
