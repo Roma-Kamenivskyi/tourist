@@ -120,21 +120,37 @@ $(function() {
       .slideToggle();
   });
 
-  // Mobile burger menu
+  //OPEN MOBILE BURGER MENU
   const mobileWrap = $(".mobile-nav-wrapper");
 
   $(".burger-menu").on("click", function() {
+    $("html, body").css("overflow-y", "hidden");
     mobileWrap.css({
       left: "0",
       right: "0"
     });
   });
 
-  // CLOSE BTN
+  // CLOSE BURGER MENU
   $(".close-mobile-nav").on("click", function() {
+    $("html, body").css("overflow-y", "auto");
     mobileWrap.css({
       left: "-1000px",
       right: "auto"
     });
+  });
+
+  // BUTTON SCROLL TO TOP
+  const scrollToTop = $("#toTopBtn");
+  $(window).on("scroll", function() {
+    if ($(this).scrollTop() > 400) {
+      scrollToTop.css("bottom", "6rem");
+    } else {
+      scrollToTop.css("bottom", "-10rem");
+    }
+  });
+  scrollToTop.on("click", function(event) {
+    event.preventDefault();
+    $("body, html").animate({ scrollTop: 0 }, 300);
   });
 });
