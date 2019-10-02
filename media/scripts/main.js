@@ -110,6 +110,15 @@ $(function() {
     ]
   });
 
+  // Global variables
+  const toTopBtn = $("#toTopBtn");
+  const mobileWrap = $(".mobile-nav-wrapper");
+
+  // Event Listeners
+  $(".close-mobile-nav").on("click", closeMobileNavigation);
+  $(window).on("scroll", displayBtnByScroll);
+  toTopBtn.on("click", scrollToTop);
+
   // Navbar accordion dropdown
   $(".dropdown-toggle").on("click", function() {
     $(".dropdown-menu")
@@ -121,7 +130,6 @@ $(function() {
   });
 
   //OPEN MOBILE BURGER MENU
-  const mobileWrap = $(".mobile-nav-wrapper");
 
   $(".burger-menu").on("click", function() {
     $("html, body").css("overflow-y", "hidden");
@@ -131,26 +139,25 @@ $(function() {
     });
   });
 
-  // CLOSE BURGER MENU
-  $(".close-mobile-nav").on("click", function() {
+  // functions
+  function closeMobileNavigation() {
     $("html, body").css("overflow-y", "auto");
     mobileWrap.css({
       left: "-1000px",
       right: "auto"
     });
-  });
+  }
 
-  // BUTTON SCROLL TO TOP
-  const scrollToTop = $("#toTopBtn");
-  $(window).on("scroll", function() {
+  function displayBtnByScroll() {
     if ($(this).scrollTop() > 400) {
-      scrollToTop.css("bottom", "6rem");
+      toTopBtn.css("bottom", "6rem");
     } else {
-      scrollToTop.css("bottom", "-10rem");
+      toTopBtn.css("bottom", "-10rem");
     }
-  });
-  scrollToTop.on("click", function(event) {
+  }
+
+  function scrollToTop(event) {
     event.preventDefault();
     $("body, html").animate({ scrollTop: 0 }, 300);
-  });
+  }
 });
