@@ -158,6 +158,6 @@ $(function() {
 
   function scrollToTop(event) {
     event.preventDefault();
-    $("body, html").animate({ scrollTop: 0 }, 300);
+    $("body, html").animate({ scrollTop: 0 }, 500);
   }
 });

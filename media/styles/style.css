@@ -13,6 +13,10 @@ a {
   transition: 0.3s ease;
 }
 
+.slick-slide {
+  cursor: move;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -80,7 +84,7 @@ a {
 
 .main-header {
   background-color: #a3cbe4;
-  background-image: url("../images/header-bg-1.jpg");
+  background-image: url("../images/header-bg-1.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -301,7 +305,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ef5b5b;
+  background: linear-gradient(45deg, #d4145a, #fbb03b);
   color: #000;
   width: 100%;
   height: 100%;
@@ -672,12 +676,24 @@ a {
   margin-bottom: 3rem;
   max-width: 370px;
   border-radius: 7px;
+  overflow: hidden;
 }
 
 .tour-package-cards li img {
   width: 100%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.tour-package-cards li img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.tour-card-img-wrapper {
+  overflow: hidden;
 }
 
 .tour-card-body {
@@ -841,7 +857,7 @@ a {
 .best-tourist-places {
   position: relative;
   padding: 15rem 0 11rem 0;
-  background: url(../images/earth-map.png);
+  background: url(../images/earth-map.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1077,7 +1093,7 @@ a {
 
 .our-apps-inner {
   padding: 19.6rem 0 17.8rem 0;
-  background: url(../images/mobile-app-img.png) left no-repeat/contain;
+  background: url(../images/mobile-app-img.webp) left no-repeat/contain;
 }
 
 .app-description {
@@ -1448,25 +1464,22 @@ a {
           align-items: center;
   right: 4rem;
   bottom: -10rem;
+  width: 45px;
+  height: 45px;
   background-color: transparent;
   border-radius: 5px;
-  color: #09fa45;
+  color: #fff;
   border: none;
   font-size: 45px;
   -webkit-transition: 0.5s cubic-bezier(0, 0, 0, 1.78);
   transition: 0.5s cubic-bezier(0, 0, 0, 1.78);
   z-index: 90;
   cursor: pointer;
+  background: linear-gradient(45deg, #d4145a, #fbb03b);
 }
 
 .button-top:focus {
   outline: none;
-  color: #00b1ff;
-}
-
-.button-top i {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
 }
 
 @media only screen and (max-width: 1600px) {
