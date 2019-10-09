@@ -4,36 +4,31 @@ $(function() {
   const mobileWrap = $(".mobile-nav-wrapper");
 
   // Event Listeners
-  $(".close-mobile-nav").on("click", closeMobileNavigation);
+  $(".close-mobile-nav").on("click", closeMobileNav);
+  $(".burger-menu").on("click", openMobileNav);
+  $(".dropdown-toggle").on("click", toggleDropdownAccordion);
   $(window).on("scroll", displayBtnByScroll);
   toTopBtn.on("click", scrollToTop);
 
-  // Navbar accordion dropdown
-  $(".dropdown-toggle").on("click", function() {
+  // functions
+  function toggleDropdownAccordion() {
     $(".dropdown-menu")
       .not($(this).next())
       .slideUp();
     $(this)
       .next()
       .slideToggle();
-  });
-
-  // Open burger menu
-
-  $(".burger-menu").on("click", function() {
+  }
+  function openMobileNav() {
     $("html, body").css("overflow-y", "hidden");
     mobileWrap.css({
-      left: "0",
-      right: "0"
+      transform: "translateX(0%)"
     });
-  });
-
-  // functions
-  function closeMobileNavigation() {
+  }
+  function closeMobileNav() {
     $("html, body").css("overflow-y", "auto");
     mobileWrap.css({
-      left: "-1000px",
-      right: "auto"
+      transform: "translateX(-100%)"
     });
   }
 
@@ -64,6 +59,7 @@ $(function() {
     loop: true
   });
 
+  // Slick carousel
   $(".slick").slick({
     slidesToShow: 3,
     slidesToScroll: 1,

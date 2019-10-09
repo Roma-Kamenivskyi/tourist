@@ -279,9 +279,12 @@ a {
 
 .mobile-nav-wrapper {
   position: fixed;
-  left: -1000px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   top: 0;
   bottom: 0;
+  height: 100%;
+  width: 100%;
   z-index: 100;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
