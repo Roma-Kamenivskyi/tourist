@@ -6,8 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="testing online page" />
-    <meta name="keywords" content="site layout" />
+    <meta name="description" content="We are travel agency" />
+    <meta name="keywords" content="Mocco, Mocco group, travel agence" />
     <link rel="stylesheet" href="media/styles/reset.css" />
     <link rel="stylesheet" href="media/styles/rem_grid.css" />
     <link rel="stylesheet" href="media/styles/slick.css" />
@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="media/fonts/font-awesome/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <title>Mocco group</title>
   </head>
   <body>
     <!-- Header page -->
@@ -64,7 +64,7 @@
               <a class="navigation-link" href="#">Contact</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#"
+              <a class="navigation-link" href="#" aria-label="search"
                 ><i class="fa fa-search" aria-hidden="true"></i
               ></a>
             </li>
@@ -73,7 +73,7 @@
             </li>
           </ul>
 
-          <button class="burger-menu">
+          <button class="burger-menu" aria-label="Open menu">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
         </nav>
@@ -83,7 +83,7 @@
             World Best Travell Agency
           </h1>
           <p class="header_offer-text">
-            Save Upto 40% For Upcoming Summer
+            <span id="typed"></span>
             <span class="offer-text-bottom"
               >Starts From $250 Only ( 2 Days, 3 Nights)</span
             >
@@ -745,14 +745,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- Testimonial video section -->
-      <!-- <section class="testimonial-section">
-
-        <div class="overlay-video">
-          
-        </div>
-      </section> -->
       <section class="blog-section">
         <h2 class="section-title">
           Our Agency 
@@ -969,7 +961,7 @@
               <div class="contacts">
                 <a class="phone" href="tel:+9685-758-4157-60">
                   <i class="fa fa-phone-square" aria-hidden="true"></i>
-                  +9685 758 4157-60
+                  +9685-758-4157-60
                 </a> 
                 <address class="address">
                     <i class="fa fa-map-marker" aria-hidden="true"></i> 
@@ -1015,7 +1007,7 @@
               </div>
               <div class="quick-search-wrapper">
                 <input type="text" class="quick-search" placeholder="Quick Search">
-                <button type="button">
+                <button type="button" aria-label="search">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </div>
@@ -1064,18 +1056,19 @@
               <a class="mobile-link" href="#">Contact</a>
             </li>
             <li>
-              <button class="close-mobile-nav">
+              <button class="close-mobile-nav" aria-label="Close menu">
                 <i class="fa fa-times" aria-hidden="true"></i>
               </button>
             </li>
         </ul>
      </div>
-     <a href="#" class="button-top" id="toTopBtn" title="Scroll to top">
+     <a href="#" class="button-top" id="toTopBtn" aria-label="Scroll to top" title="Scroll to top">
         <i class="fa fa-angle-up"></i>
      </a>
      
-    <script src="media/scripts/jquery.min.js"></script>
-    <script src="media/scripts/slick.min.js"></script>
-    <script src="media/scripts/main.js"></script>
+    <script src="./media/scripts/jquery.min.js"></script>
+    <script src="./media/scripts/slick.min.js"></script>
+    <script src="./media/scripts/typed.min.js"></script>
+    <script src="./media/scripts/main.js"></script>
   </body>
 </html>
