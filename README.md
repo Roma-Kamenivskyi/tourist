@@ -1,3 +1,3 @@
 # tourist
 The tourist test project
-[DEMO](https://roma-kamenivskyi.github.io/tourist/)
+[DEMO](https://kamenivskyi.github.io/tourist/)
