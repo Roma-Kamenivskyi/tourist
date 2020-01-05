@@ -84,7 +84,7 @@ a {
 
 .main-header {
   background-color: #a3cbe4;
-  background-image: url("../images/header-bg-1.webp");
+  background-image: url("../images/header-bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -177,7 +177,6 @@ a {
   border-top: 4px solid;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
-  content: '';
 }
 
 .dropdown {
@@ -864,7 +863,7 @@ a {
 .best-tourist-places {
   position: relative;
   padding: 15rem 0 11rem 0;
-  background: url(../images/earth-map.webp);
+  background: url(../images/earth-map.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1100,7 +1099,7 @@ a {
 
 .our-apps-inner {
   padding: 19.6rem 0 17.8rem 0;
-  background-image: url(../images/mobile-app-img.webp);
+  background-image: url(../images/mobile-app-img.png);
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
