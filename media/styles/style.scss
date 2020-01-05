@@ -7,7 +7,7 @@ $white: #ffffff;
 
 // global selectors
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 img {
   max-width: 100%;
@@ -33,7 +33,7 @@ a {
 .section-title {
   /* Text style for "Our Agency" */
   color: $red;
-  font-family: "Segoe Script", cursive;
+  font-family: 'Segoe Script', cursive;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -41,7 +41,7 @@ a {
 .section-title-bottom {
   display: block;
   color: $black;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 2.8rem;
   font-weight: 700;
   line-height: 3rem;
@@ -49,13 +49,13 @@ a {
 }
 .section-text {
   color: grey;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.8rem;
 }
 .section-btn {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,11 +77,11 @@ a {
 
 .main-header {
   background-color: #a3cbe4;
-  background-image: url("../images/header-bg-1.webp");
+  background-image: url('../images/header-bg-1.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   padding: 6rem 0;
 }
 
@@ -93,7 +93,7 @@ a {
   }
 }
 .logo-text {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -116,7 +116,7 @@ a {
   align-items: center;
 }
 .navigation-list {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   display: flex;
   align-items: center;
 }
@@ -133,7 +133,7 @@ a {
 }
 .dropdown-toggle {
   &::after {
-    content: "";
+    content: '';
     display: inline-block;
     width: 0;
     height: 0;
@@ -142,7 +142,7 @@ a {
     border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    content: "";
+    content: '';
   }
 }
 .dropdown {
@@ -199,7 +199,7 @@ a {
   padding: 18rem 0;
 }
 .header-title {
-  font-family: "Segoe Script", cursive;
+  font-family: 'Segoe Script', cursive;
   font-size: 2.8rem;
   color: $red;
   font-weight: 400;
@@ -294,7 +294,7 @@ a {
     position: relative;
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       top: 2px;
       margin-left: -10px;
       width: 2px;
@@ -336,7 +336,7 @@ a {
   .card-title {
     /* Text style for "London, Englan" */
     color: $black;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.6rem;
@@ -358,7 +358,7 @@ a {
   a {
     background-color: $red;
     color: white;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.9rem;
@@ -372,7 +372,7 @@ a {
 .rating {
   font-size: 1.4rem;
   color: $black;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 600;
 }
 .stars {
@@ -415,7 +415,7 @@ a {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     &::before {
-      content: "";
+      content: '';
     }
   }
 
@@ -434,7 +434,7 @@ a {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     &:before {
-      content: "";
+      content: '';
     }
   }
   .slick-prev,
@@ -475,7 +475,7 @@ a {
 }
 .benefit-title {
   color: $blue;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 2.6rem;
@@ -486,14 +486,16 @@ a {
 .top-tour-packege {
   position: relative;
   padding: 14.5rem 0;
-  background: url("../images/top-tour-packege-bg.jpg") center top no-repeat /
-    cover;
+  background-image: url('../images/top-tour-packege-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   z-index: 1;
   overflow: hidden;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -530,7 +532,7 @@ a {
       background-color: $red;
     }
     &::before {
-      content: "";
+      content: '';
     }
   }
   .slick-next {
@@ -550,7 +552,7 @@ a {
       background-color: $red;
     }
     &::before {
-      content: "";
+      content: '';
     }
   }
 
@@ -618,7 +620,7 @@ a {
 }
 .days {
   &::before {
-    content: "*";
+    content: '*';
     color: $red;
     font-size: 1.8rem;
   }
@@ -630,7 +632,7 @@ a {
   background-color: $blue;
   padding: 10px 20px;
   color: #ffffff;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4rem;
@@ -668,7 +670,7 @@ a {
   background-color: #fff;
   flex-grow: 1;
   color: #808080;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.2rem;
@@ -691,7 +693,7 @@ a {
 .book-people {
   a {
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       width: 0;
       height: 0;
@@ -706,7 +708,7 @@ a {
 .book-now-main-btn {
   border: none;
   color: #ffffff;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.6rem;
@@ -729,7 +731,7 @@ a {
   z-index: 2;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -774,7 +776,7 @@ a {
 }
 .mainland-name {
   color: $black;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 2.6rem;
@@ -790,7 +792,7 @@ a {
   font-size: 1.6rem;
 
   &::before {
-    content: "°";
+    content: '°';
     position: relative;
     top: 10px;
     color: $blue;
@@ -828,7 +830,7 @@ a {
 .amout {
   display: block;
   color: #ffffff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 3rem;
@@ -839,7 +841,7 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.8rem;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -885,7 +887,7 @@ a {
   justify-content: space-between;
   align-items: center;
   color: #808080;
-  font-family: "Poppins", "Arial";
+  font-family: 'Poppins', 'Arial';
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -901,7 +903,10 @@ a {
 }
 .our-apps-inner {
   padding: 19.6rem 0 17.8rem 0;
-  background: url(../images/mobile-app-img.webp) left no-repeat / contain;
+  background-image: url(../images/mobile-app-img.webp);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .app-description {
   margin-left: auto;
@@ -937,11 +942,14 @@ a {
 .partners-section {
   position: relative;
   padding-top: 19.8rem;
-  background: url(../images/top-tour-packege-bg.jpg) center no-repeat / cover;
+  background-image: url(../images/top-tour-packege-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
   text-align: center;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -996,7 +1004,7 @@ a {
   box-shadow: 1px 1px 10px rgba(33, 30, 31, 0.2);
   background-color: #ffffff;
   color: #808080;
-  font-family: "Poppins", "Arial";
+  font-family: 'Poppins', 'Arial';
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.8rem;
@@ -1028,7 +1036,7 @@ a {
   input,
   .form-textarea {
     color: #808080;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 2.8rem;
@@ -1063,7 +1071,7 @@ a {
   background-color: $red;
   border: none;
   color: #ffffff;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.8rem;
@@ -1091,7 +1099,7 @@ a {
 }
 .contacts {
   color: #222222;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -1118,25 +1126,34 @@ a {
 
 .link-title {
   color: $black;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.8rem;
   margin-bottom: 3.7rem;
 }
-.footer-social-links li a,
-.footer-links li a {
-  color: $black;
-  font-family: "Poppins";
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-  text-transform: uppercase;
+.footer-links,
+.footer-social-links {
+  li {
+    a {
+      color: $black;
+      font-family: 'Poppins';
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+      text-transform: uppercase;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
 }
 
-.footer-social-links li,
-.footer-links li {
-  margin-bottom: 2rem;
+.footer-social-links,
+.footer-links {
+  li {
+    margin-bottom: 2rem;
+  }
 }
 .footer-social-links {
   li {
@@ -1182,7 +1199,7 @@ a {
 .quick-search {
   padding: 1.1rem 1.4rem;
   color: #808080;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 2.8rem;
@@ -1198,7 +1215,7 @@ a {
   text-align: center;
   padding: 1.5rem;
   color: #edebeb;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.6rem;
@@ -1291,7 +1308,9 @@ a {
 }
 @media only screen and (max-width: 830px) {
   .our-apps-inner {
-    background: url(../images/mobile-app-img.png) left bottom no-repeat / 51%;
+    // background: url(../images/mobile-app-img.png);
+    background-position: left bottom;
+    background-size: 51%;
   }
   .our-apps-block {
     .section-text {
