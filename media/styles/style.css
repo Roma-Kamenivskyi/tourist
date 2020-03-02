@@ -546,7 +546,8 @@ a {
   width: 30%;
   padding: 3.5rem 1.5rem 5.5rem 1.5rem;
   background-color: #fff;
-  min-height: 260px;
+  min-height: 295px;
+  max-height: 295px;
   margin: 0 15px;
 }
 
@@ -1776,19 +1777,18 @@ a {
 
 @media only screen and (max-width: 662px) {
   .convenience-item {
-    min-height: 334px;
-  }
-}
-
-@media only screen and (max-width: 662px) {
-  .convenience-item {
-    min-height: 230px;
+    min-height: 300px;
+    max-height: 300px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .convenience-section .container {
     width: 84%;
+  }
+  .convenience-item {
+    min-height: 250px;
+    max-height: 250px;
   }
   .why-choose-us .container {
     width: 100%;
@@ -1892,14 +1892,22 @@ a {
 }
 
 @media only screen and (max-width: 350px) {
+  .list-partners .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .tour-package-cards .slick-prev {
     left: 6px;
   }
   .tour-package-cards .slick-next {
     right: 6px;
-  }
-  .slick-slide img {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
