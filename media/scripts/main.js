@@ -2,7 +2,10 @@ $(function() {
   // Global variables
   const toTopBtn = $('#toTopBtn');
   const mobileWrap = $('.mobile-nav-wrapper');
-
+  const copyright = $('copyright');
+  
+  copyright.textContent = (new Date).getFullYear();
+  
   // Event Listeners
   $('.close-mobile-nav').on('click', closeMobileNav);
   $('.burger-menu').on('click', openMobileNav);
