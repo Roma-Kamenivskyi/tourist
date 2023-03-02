@@ -1,64 +1,60 @@
-$(function() {
+$(function () {
   // Global variables
-  const toTopBtn = $('#toTopBtn');
-  const mobileWrap = $('.mobile-nav-wrapper');
-  const copyright = $('copyright');
-  
-  copyright.textContent = (new Date).getFullYear();
-  
+  const toTopBtn = $("#toTopBtn");
+  const mobileWrap = $(".mobile-nav-wrapper");
+  const [copyright] = $("#copyright");
+
+  copyright.textContent = new Date().getFullYear();
+
   // Event Listeners
-  $('.close-mobile-nav').on('click', closeMobileNav);
-  $('.burger-menu').on('click', openMobileNav);
-  $('.dropdown-toggle').on('click', toggleDropdownAccordion);
-  $(window).on('scroll', displayBtnByScroll);
-  toTopBtn.on('click', scrollToTop);
+  $(".close-mobile-nav").on("click", closeMobileNav);
+  $(".burger-menu").on("click", openMobileNav);
+  $(".dropdown-toggle").on("click", toggleDropdownAccordion);
+  $(window).on("scroll", displayBtnByScroll);
+  toTopBtn.on("click", scrollToTop);
 
   // functions
   function toggleDropdownAccordion() {
-    $('.dropdown-menu')
-      .not($(this).next())
-      .slideUp();
-    $(this)
-      .next()
-      .slideToggle();
+    $(".dropdown-menu").not($(this).next()).slideUp();
+    $(this).next().slideToggle();
   }
   function openMobileNav() {
-    $('html, body').css('overflow-y', 'hidden');
+    $("html, body").css("overflow-y", "hidden");
     mobileWrap.css({
-      transform: 'translateX(0%)'
+      transform: "translateX(0%)",
     });
   }
   function closeMobileNav() {
-    $('html, body').css('overflow-y', 'auto');
+    $("html, body").css("overflow-y", "auto");
     mobileWrap.css({
-      transform: 'translateX(-100%)'
+      transform: "translateX(-100%)",
     });
   }
 
   function displayBtnByScroll() {
     if ($(this).scrollTop() > 400) {
-      toTopBtn.css('bottom', '6rem');
+      toTopBtn.css("bottom", "6rem");
     } else {
-      toTopBtn.css('bottom', '-10rem');
+      toTopBtn.css("bottom", "-10rem");
     }
   }
 
   function scrollToTop(event) {
     event.preventDefault();
-    $('body, html').animate({ scrollTop: 0 }, 500);
+    $("body, html").animate({ scrollTop: 0 }, 500);
   }
 
   // Plugins init
-  const typed = new Typed('#typed', {
-    strings: ['We know what you need', 'Join us, you will not regret'],
+  const typed = new Typed("#typed", {
+    strings: ["We know what you need", "Join us, you will not regret"],
     startDelay: 20,
     backSpeed: 40,
     typeSpeed: 70,
-    loop: true
+    loop: true,
   });
 
   // Slick carousel
-  $('.slick').slick({
+  $(".slick").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
@@ -72,35 +68,35 @@ $(function() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true
-        }
+          infinite: true,
+        },
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true
-        }
+          infinite: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
-        }
+          slidesToScroll: 2,
+        },
       },
       {
         breakpoint: 570,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
-  $('.slick-cards').slick({
+  $(".slick-cards").slick({
     centerMode: true,
     slidesToShow: 4,
     infinite: true,
@@ -109,32 +105,32 @@ $(function() {
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          centerMode: true
-        }
+          centerMode: true,
+        },
       },
       {
         breakpoint: 350,
         settings: {
           slidesToShow: 1,
-          centerMode: false
-        }
-      }
-    ]
+          centerMode: false,
+        },
+      },
+    ],
   });
-  $('.partners-slick').slick({
+  $(".partners-slick").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
@@ -143,30 +139,30 @@ $(function() {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 4
-        }
+          slidesToShow: 4,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
-        }
+          slidesToScroll: 3,
+        },
       },
       {
         breakpoint: 500,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
-        }
+          slidesToScroll: 2,
+        },
       },
       {
         breakpoint: 350,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
